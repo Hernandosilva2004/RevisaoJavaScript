@@ -21,23 +21,46 @@
     <br>
     <br>
     <br>
-    <br>
     <!-- Meu exemplo 3 -->
     <h2 id="testeTroca">Trocando</h2>
     <button id="botaoTroca">Trocar</button>
 
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <p id="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo vel architecto libero nam eum,
+        iste esse ut quis expedita et ducimus fuga, fugiat dolorem soluta cupiditate, omnis a sed sint.</p>
+    <button type="button"
+        onclick="document.getElementById('paragrafo').style.color = 'red';document.getElementById('paragrafo').display = 'none'">Avermelhar</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Meu exemplo 4 -->
+    <p id="sominha"></p>
+
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <button type="button" id="enviarSoma">Enviar</button>
+
+
     <!-- Puxar script -->
     <script src="js/script.js"></script>
-    
+
 
     <script>
-    // exemplo 1
-    document.getElementById("ativar").addEventListener("click", executar);
-    // exemplo 2
-    document.getElementById("ativarHora").addEventListener("click", hora);
-    // meu exemplo 3
-    document.getElementById("botaoTroca").addEventListener("click", trocar);
-
+        // exemplo 1
+        document.getElementById("ativar").addEventListener("click", executar);
+        // exemplo 2
+        document.getElementById("ativarHora").addEventListener("click", hora);
+        // meu exemplo 3
+        document.getElementById("botaoTroca").addEventListener("click", trocar);
+        // meu exemplo 4
+        document.getElementById("enviarSoma").addEventListener("click", sominha)
     </script>
 
 </body>
