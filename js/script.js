@@ -24,7 +24,27 @@ function trocar() {
 
 }
 
-function sominha(){
+function avermelhar() {
+    let elemento = document.getElementById("paragrafo") || document.getElementById("paragrafoTrocado1") || document.getElementById("paragrafoTrocado2")
+
+    if (elemento) {
+        if (elemento.id === 'paragrafo') {
+            document.getElementById('paragrafo').style.color = 'red';
+            elemento.id = 'paragrafoTrocado1';
+            elemento.style.fontSize = '2em';
+        } else if (elemento.id === 'paragrafoTrocado1') {
+            document.getElementById('paragrafoTrocado1').style.color = 'green';
+            elemento.id = 'paragrafoTrocado2';
+        } else if (elemento.id === 'paragrafoTrocado2') {
+            document.getElementById('paragrafoTrocado2').style.color = 'blue';
+            elemento.id = 'paragrafo';
+        }
+    }else {
+        alert("falhou cores")
+    }
+}
+
+function sominha() {
     let input1 = document.getElementById('input1').value;
     let input2 = document.getElementById('input2').value;
 
@@ -32,6 +52,10 @@ function sominha(){
     let numero2 = parseFloat(input2);
 
     let soma = numero1 + numero2;
-    
+
     document.getElementById('sominha').innerHTML = `Soma: ${soma}`;
+}
+
+function consoleT() {
+    console.log("teste");
 }
