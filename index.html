@@ -43,11 +43,12 @@
     <!-- Meu exemplo 5 -->
 
     <p id="sominha"></p>
+    <p id="subtracaozinha"></p>
 
     <input type="text" id="input1">
     <input type="text" id="input2">
-    <button type="button" id="enviarSoma">Enviar</button>
-
+    <button type="button" id="enviarSoma">Somar</button>
+    <button type="button" id="enviarSubtracao">Subtrair</button>
 
     <!-- Puxar script -->
     <script src="js/script.js"></script>
@@ -63,7 +64,9 @@
         // meu exemplo 4
         document.getElementById("botaoVermelho").addEventListener("click", avermelhar)
         // meu exemplo 5
-        document.getElementById("enviarSoma").addEventListener("click", sominha);
+        document.getElementById("enviarSoma").addEventListener("dblclick", sominha);
+
+        document.getElementById("enviarSubtracao").addEventListener("dblclick", subtracao);
 
         consoleT();
     </script>

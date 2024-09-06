@@ -56,6 +56,18 @@ function sominha() {
     document.getElementById('sominha').innerHTML = `Soma: ${soma}`;
 }
 
+function subtracao(){
+    let input1 = document.getElementById('input1').value;
+    let input2 = document.getElementById('input2').value;
+
+    let numero1 = parseFloat(input1);
+    let numero2 = parseFloat(input2);
+
+    let subtracao = numero1 - numero2;
+
+    document.getElementById('subtracaozinha').innerHTML = `Subtração: ${subtracao}`;
+}
+
 function consoleT() {
     console.log("teste");
 }
