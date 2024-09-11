@@ -39,21 +39,44 @@
     <br>
     <br>
     <br>
-
+    
     <!-- Meu exemplo 5 -->
 
     <p id="sominha"></p>
     <p id="subtracaozinha"></p>
-
+    
     <input type="text" id="input1">
     <input type="text" id="input2">
     <button type="button" id="enviarSoma">Somar</button>
     <button type="button" id="enviarSubtracao">Subtrair</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Meu exemplo 6 -->
+
+    <p>Digite o número para descobrir até onde vai em fibonacci:</p>
+    <input type="text" id="inputFibonacci">
+    <button type="button" onclick="fibonacci()">Enviar</button>
+    <p id="resultadoFibonacci"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Meu exemplo 7 -->
+    <p>Digite um número para descobrir seu fatorial:</p>
+    <input type="text" id="inputFatorial">
+    <button type="button" onclick="fatorial()">Enviar</button>
+    <p id="resultadoFatorial"></p>
+
 
     <!-- Puxar script -->
     <script src="js/script.js"></script>
 
-
+    
     <script>
         // exemplo 1
         document.getElementById("ativar").addEventListener("click", executar);
@@ -64,9 +87,9 @@
         // meu exemplo 4
         document.getElementById("botaoVermelho").addEventListener("click", avermelhar)
         // meu exemplo 5
-        document.getElementById("enviarSoma").addEventListener("dblclick", sominha);
+        document.getElementById("enviarSoma").addEventListener("click", sominha);
 
-        document.getElementById("enviarSubtracao").addEventListener("dblclick", subtracao);
+        document.getElementById("enviarSubtracao").addEventListener("click", subtracao);
 
         consoleT();
     </script>
